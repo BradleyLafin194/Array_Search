@@ -11,11 +11,11 @@
             int index = (numbers.Length);
             index = 0;
            
-            while (index < 16) 
+            while (index < 16) //makes sure that the program does not run more times than the array has values
             {
-                
+                int search = Console.Readline();
                 numb = numbers[index];
-                if (numb == 7)
+                if (numb == search)//searching ffor the number 
                 {
                     count = count + 1;  
                 }
@@ -23,7 +23,7 @@
                 index = (index + 1);
             }
             
-            Console.WriteLine(count);
+            Console.WriteLine(count);//print how many times the number was found in the array
             
         }
     }
