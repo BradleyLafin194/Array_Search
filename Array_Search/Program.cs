@@ -5,6 +5,9 @@
     {
         static void Main(string[] args)
         {
+            int search = 0;
+            Console.WriteLine("Enter the number you want to search for: ");
+            search = Convert.ToInt32(Console.ReadLine());
             int count = 0;
             int numb;
             int[] numbers = { 1, 2, 2, 3, 3, 4, 5, 6, 5, 7, 7, 7, 7, 8, 8, 9 };
@@ -13,7 +16,7 @@
            
             while (index < 16) //makes sure that the program does not run more times than the array has values
             {
-                int search = Console.Readline();
+                
                 numb = numbers[index];
                 if (numb == search)//searching ffor the number 
                 {
